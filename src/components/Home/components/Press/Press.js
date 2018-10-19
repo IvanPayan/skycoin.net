@@ -85,15 +85,18 @@ const Press = () => (
     <Container>
       <Wrapper py={[6, 8, 10]} px={[7, 10, 12]}>
         <Flex wrap>
-          <Box width={[1, 4 / 5]}>
+          <Box flex={'1'}>
             <Heading heavy as="h2" my={[4, 6]} mr={[13]} fontSize={[5, 6, 7]} color="white">
               <FormattedMessage id="home.press.heading" />
+              <p>
+                <FormattedMessage as="p" id="home.press.subheading" />
+              </p>
             </Heading>
             <Paragraph>
               <FormattedMessage id="home.press.body" />
             </Paragraph>
           </Box>
-          <Flex row align="center" justify="flex-end" width={[0, 1 / 5]}>
+          <Flex row align="center" justify="flex-end">
             <Graphic />
           </Flex>
         </Flex>

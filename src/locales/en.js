@@ -172,7 +172,8 @@ export default {
       more: 'Learn more',
     },
     press: {
-      heading: 'Skycoin Picked As Top 5 \n Crypto Projects to Watch in 2018',
+      heading: 'Skycoin Picked As Top 5 Crypto Projects For 2018',
+      subheading: 'The #1 Project to watch out for in 2019',
       body: '“Net neutrality and consumer data privacy emerged as two key issues in tech in 2017. If you’re concerned about paying ridiculous fees to ISPs for unreliable coverage, having your data sold, or government monitoring and censorship - Skycoin provides hope. These are the core issues Skycoin is attempting to solve.”',
     },
     ecosystem: {
