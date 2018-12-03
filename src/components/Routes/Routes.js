@@ -25,6 +25,7 @@ import SkyminerForm from '../SkyminerForm';
 import Obelisk from '../Obelisk';
 import GalleryPage from '../GalleryPage';
 import BuyFiatPage from '../BuyFiatPage/BuyFiatPage';
+import EventsPage from '../EventsPage/EventsPage';
 
 const Routes = ({ match }) => {
   const prefix = match.path === '/' ? '/' : '/:locale/';
@@ -48,6 +49,7 @@ const Routes = ({ match }) => {
       <Route path={`${prefix}cx`} exact component={CX} />
       <Route path={`${prefix}fiber`} exact component={Fiber} />
       <Route path={`${prefix}jobs`} exact component={Jobs} />
+      <Route path={`${prefix}events`} exact component={EventsPage} />
       <Route path={`${prefix}whiteList`} exact component={Whitelist} />
       <Route path={`${prefix}orderskyminer`} exact component={SkyminerForm} />
       <Route path={`${prefix}whiteListForm`} exact component={WhitelistForm} />
