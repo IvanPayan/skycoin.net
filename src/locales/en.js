@@ -910,6 +910,21 @@ export default {
     conversionError: 'Error: unable to get currency conversion. Try again later.',
     transactionRangeError: `Please introduce an amount between ${MIN_TRANSACTION_AMOUNT} and ${MAX_TRANSACTION_AMOUNT}`,
   },
+  events: {
+    title: 'Skycoin is hiring developers.',
+    subtitle: 'We are hiring',
+    sidebarTitle1: 'JOIN THE TELEGRAM GROUP',
+    sidebarTitle2: 'AND SUBMIT AN EMAIL TO',
+    sidebarTitle3: 'WITH THE FOLLOWING INFORMATION:',
+    sidebarList: {
+      city: 'City, State, Country',
+      location: 'Location of meetup',
+      date: 'Date',
+      time: 'Time',
+      additional: 'Additional information',
+      contact: 'Contact information',
+    },
+  },
 };
 
 /* eslint-enable max-len */

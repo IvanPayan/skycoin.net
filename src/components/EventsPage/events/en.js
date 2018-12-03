@@ -4,10 +4,6 @@ export default [
     info: [
       {
         title: '',
-        text: 'November 30 - Austin, Texas, USA',
-      },
-      {
-        title: '',
         text: 'Join the Austin Skycoin Community to learn more about Skywire!',
       },
       {

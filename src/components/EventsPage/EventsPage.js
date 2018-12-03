@@ -115,23 +115,6 @@ const Subtitle = styled(Text) `
   font-family: SkycoinSansBold, sans-serif;
   font-size: ${rem(FONT_SIZES[2])};
 `;
-const NumberedList = styled.ol`
-  width: calc(100% - 15px);
-  margin: 0 0 ${rem(SPACE[6])} 15px;
-  font-size: ${FONT_SIZES[2]}px;
-  color: #394049;
-  font-family: ${FONT_FAMILIES.sans};
-  line-height: 1.75rem;
-`;
-const NumberedListItem = styled.li`
-  list-style-position: inside;
-  position: relative;
-  padding-left: 5px;
-  list-style-position: outside;
-`;
-const Bold = styled.span`
-  font-weight: 600;
-`;
 
 const renderAccordionContent = event =>
   (<StyledList>
@@ -170,53 +153,39 @@ const EventsPage = ({ intl }) => {
                 <QuoteLine />
                 <Quote>
                   <StyledText>
-                    <FormattedMessage id="jobs.sidebarTitle1" />
+                    <FormattedMessage id="events.sidebarTitle1" />
                   </StyledText>
-                  <StyledLink href="mailto:jobs@skycoin.net">jobs@skycoin.net</StyledLink><br />
-                  <StyledText2 >
-                    <FormattedMessage id="jobs.sidebarTitle2" />
-                  </StyledText2>
+                  <StyledLink href="https://t.me/meetupsworldwideskycoin">@meetupsworldwideskycoin</StyledLink><br />
+                  <StyledText>
+                    <FormattedMessage id="events.sidebarTitle2" />
+                  </StyledText>
+                  <StyledLink href="mailto:contact@skycoin.net">contact@skycoin.net</StyledLink><br />
+                  <StyledText>
+                    <FormattedMessage id="events.sidebarTitle3" />
+                  </StyledText>
                 </Quote>
               </QuoteContainer>
-
               <Text>
                 <StyledList>
                   <StyledListItem>
-                    <FormattedMessage id="jobs.sidebarList.name" />
+                    <FormattedMessage id="events.sidebarList.city" />
                   </StyledListItem>
                   <StyledListItem>
-                    <FormattedMessage id="jobs.sidebarList.skills" />
+                    <FormattedMessage id="events.sidebarList.location" />
                   </StyledListItem>
                   <StyledListItem>
-                    <FormattedMessage id="jobs.sidebarList.time" />
+                    <FormattedMessage id="events.sidebarList.date" />
                   </StyledListItem>
                   <StyledListItem>
-                    <FormattedMessage id="jobs.sidebarList.timezone" />
+                    <FormattedMessage id="events.sidebarList.time" />
                   </StyledListItem>
                   <StyledListItem>
-                    <FormattedMessage id="jobs.sidebarList.projects" />
+                    <FormattedMessage id="events.sidebarList.additional" />
                   </StyledListItem>
                   <StyledListItem>
-                    <FormattedMessage id="jobs.sidebarList.resume" />
-                  </StyledListItem>
-                  <StyledListItem>
-                    <FormattedMessage id="jobs.sidebarList.telegram" />
+                    <FormattedMessage id="events.sidebarList.contact" />
                   </StyledListItem>
                 </StyledList>
-              </Text>
-            </ContentInner>
-
-            <ContentInner>
-              <Text fontSize={2} color="black" linkColor={COLOR.base}>
-                <FormattedMessage id="jobs.ourProject" />
-                <Bold><FormattedMessage id="jobs.angular" /></Bold>
-                <FormattedMessage id="jobs.or" />
-                <Bold><FormattedMessage id="jobs.react" /></Bold>
-              </Text>
-              <Text fontSize={2} color="black" linkColor={COLOR.base}>
-                <FormattedMessage id="jobs.ourTeam" />
-                <StyledLink href="https://t.me/skycoindev" target="_blank">telegram</StyledLink> and
-                <StyledLink href="https://discord.gg/EgBenrW" target="_blank">discord</StyledLink>.
               </Text>
             </ContentInner>
           </Box>
