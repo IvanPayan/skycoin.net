@@ -133,15 +133,15 @@ const Bold = styled.span`
   font-weight: 600;
 `;
 
-const renderAccordionContent = event => event.info.map(info =>
-  (<div>
-    {info.title && <Subtitle fontSize={[1, 2, 3]} heavy mb={[2, 3]}>
-      <FormattedMessage id={info.title} />
-    </Subtitle>}
-    <Text fontSize={[2]} color="black" heavy mb={[6]}>
+const renderAccordionContent = event =>
+  (<StyledList>
+    {event.info.map(info => (<StyledListItem>
+      {info.title && <Subtitle fontSize={[1, 2, 3]} heavy mb={[2, 3]}>
+        <FormattedMessage id={info.title} />
+      </Subtitle>}
       <FormattedMessage id={info.text} />
-    </Text>
-  </div>));
+    </StyledListItem>))}
+  </StyledList>);
 
 const EventsPage = ({ intl }) => {
   const events = getLocale(intl.locale);

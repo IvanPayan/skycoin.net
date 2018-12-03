@@ -1,25 +1,26 @@
 export default [
   {
-    title: 'event1 zh',
+    title: 'November 30 - Austin, Texas, USA',
     info: [
       {
-        text: 'section1 text zh',
+        title: '',
+        text: 'November 30 - Austin, Texas, USA',
       },
       {
-        text: 'section1 text zh',
-      },
-    ],
-  },
-  {
-    title: 'event2 zh',
-    info: [
-      {
-        title: 'section1 zh',
-        text: 'section1 text  zh',
+        title: '',
+        text: 'Join the Austin Skycoin Community to learn more about Skywire!',
       },
       {
-        title: 'section2 zh',
-        text: 'section2 text zh',
+        title: '',
+        text: 'Firday, November 30th | 8pm - 9pm',
+      },
+      {
+        title: '',
+        text: 'The Dizzy Rooster Bar, 1111 5th Street, Austin, Texas 78701',
+      },
+      {
+        title: '',
+        text: 'For more information, join the @skycointexas telegram group or message @laurenxb',
       },
     ],
   },
