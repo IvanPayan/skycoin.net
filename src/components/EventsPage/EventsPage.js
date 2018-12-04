@@ -6,15 +6,13 @@ import { Box, Flex } from 'grid-styled';
 import { rem } from 'polished';
 import { COLOR, FONT_FAMILIES, FONT_SIZES, SPACE } from 'config';
 import media from 'utils/media';
-
+import PropTypes from 'prop-types';
 import Expander from '../ExpanderComponent/ExpanderComponent';
 import Text from '../Text/Text';
 import Header from '../Header/Header';
 import Container from '../Container/Container';
 import Heading from '../Heading/Heading';
-import SubHeading from '../SubHeading/SubHeading';
 import Footer from '../Footer/Footer';
-
 import { en, ko, ru, zh } from './events';
 
 const localeList = { en, zh, ko, ru };
@@ -36,17 +34,7 @@ const StyledText = styled(Text) `
     font-size: ${rem(FONT_SIZES[3])};  
   `}
 `;
-const StyledText2 = styled(StyledText) `
-  margin: 0;
-  text-transform: uppercase;
-  font-family: SkycoinSansBold, sans-serif;
-  font-size: ${rem(FONT_SIZES[2])};
-  color: #07172E;
 
-  ${media.md.css`
-    font-size: ${rem(FONT_SIZES[3])};  
-  `}
-`;
 const StyledList = styled.ul`
   margin: 0 0 ${rem(SPACE[4])};
   font-size: ${FONT_SIZES[2]}px;
@@ -130,22 +118,18 @@ const EventsPage = ({ intl }) => {
   const events = getLocale(intl.locale);
   return (<div>
     <Helmet>
-      <title>Skycoin Jobs</title>
+      <title>Skycoin events</title>
       <meta
         name="description"
-        content="Skycoin is hiring developers"
+        content="Skycoin events"
       />
     </Helmet>
     <Header border />
     <Container>
       <Wrapper>
         <Heading heavy as="h2" fontSize={[6, 7]} color={COLOR.textDark} mb={2}>
-          <FormattedMessage id="jobs.title" />
+          <FormattedMessage id="events.title" />
         </Heading>
-        <SubHeading fontSize={[1, 1, 2]} normal mb={[8, 10]}>
-          <FormattedMessage id="jobs.subtitle" />
-        </SubHeading>
-
         <ContentOuter>
           <Box width={[1, 35 / 100]}>
             <ContentInner>
@@ -155,11 +139,11 @@ const EventsPage = ({ intl }) => {
                   <StyledText>
                     <FormattedMessage id="events.sidebarTitle1" />
                   </StyledText>
-                  <StyledLink href="https://t.me/meetupsworldwideskycoin">@meetupsworldwideskycoin</StyledLink><br />
+                  <StyledLink target="_blank" href="https://t.me/meetupsworldwideskycoin">@meetupsworldwideskycoin</StyledLink><br />
                   <StyledText>
                     <FormattedMessage id="events.sidebarTitle2" />
                   </StyledText>
-                  <StyledLink href="mailto:contact@skycoin.net">contact@skycoin.net</StyledLink><br />
+                  <StyledLink href="mailto:lauren@mail.skycoin.net">lauren@mail.skycoin.net</StyledLink><br />
                   <StyledText>
                     <FormattedMessage id="events.sidebarTitle3" />
                   </StyledText>
@@ -201,6 +185,13 @@ const EventsPage = ({ intl }) => {
     </Container>
     <Footer />
   </div>);
+};
+
+EventsPage.propTypes = {
+  intl: PropTypes.shape({
+    locale: PropTypes.string,
+    formatMessage: PropTypes.func.isRequired,
+  }).isRequired,
 };
 
 export default injectIntl(EventsPage);

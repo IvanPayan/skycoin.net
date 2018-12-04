@@ -911,8 +911,7 @@ export default {
     transactionRangeError: `Please introduce an amount between ${MIN_TRANSACTION_AMOUNT} and ${MAX_TRANSACTION_AMOUNT}`,
   },
   events: {
-    title: 'Skycoin is hiring developers.',
-    subtitle: 'We are hiring',
+    title: 'Skycoin events',
     sidebarTitle1: 'JOIN THE TELEGRAM GROUP',
     sidebarTitle2: 'AND SUBMIT AN EMAIL TO',
     sidebarTitle3: 'WITH THE FOLLOWING INFORMATION:',
