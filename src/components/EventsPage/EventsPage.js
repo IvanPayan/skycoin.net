@@ -12,6 +12,7 @@ import Text from '../Text/Text';
 import Header from '../Header/Header';
 import Container from '../Container/Container';
 import Heading from '../Heading/Heading';
+import SubHeading from '../SubHeading';
 import Footer from '../Footer/Footer';
 import { en, ko, ru, zh } from './events';
 
@@ -130,6 +131,9 @@ const EventsPage = ({ intl }) => {
         <Heading heavy as="h2" fontSize={[6, 7]} color={COLOR.textDark} mb={2}>
           <FormattedMessage id="events.title" />
         </Heading>
+        <SubHeading fontSize={[1, 1, 2]} normal mb={[8, 10]}>
+          <FormattedMessage id="events.subtitle" />
+        </SubHeading>
         <ContentOuter>
           <Box width={[1, 35 / 100]}>
             <ContentInner>
@@ -143,34 +147,9 @@ const EventsPage = ({ intl }) => {
                   <StyledText>
                     <FormattedMessage id="events.sidebarTitle2" />
                   </StyledText>
-                  <StyledLink href="mailto:lauren@mail.skycoin.net">lauren@mail.skycoin.net</StyledLink><br />
-                  <StyledText>
-                    <FormattedMessage id="events.sidebarTitle3" />
-                  </StyledText>
+                  <StyledLink href="mailto:contact@skycoin.net">contact@skycoin.net</StyledLink><br />
                 </Quote>
               </QuoteContainer>
-              <Text>
-                <StyledList>
-                  <StyledListItem>
-                    <FormattedMessage id="events.sidebarList.city" />
-                  </StyledListItem>
-                  <StyledListItem>
-                    <FormattedMessage id="events.sidebarList.location" />
-                  </StyledListItem>
-                  <StyledListItem>
-                    <FormattedMessage id="events.sidebarList.date" />
-                  </StyledListItem>
-                  <StyledListItem>
-                    <FormattedMessage id="events.sidebarList.time" />
-                  </StyledListItem>
-                  <StyledListItem>
-                    <FormattedMessage id="events.sidebarList.additional" />
-                  </StyledListItem>
-                  <StyledListItem>
-                    <FormattedMessage id="events.sidebarList.contact" />
-                  </StyledListItem>
-                </StyledList>
-              </Text>
             </ContentInner>
           </Box>
           <Box width={[1, 65 / 100]} pl={[0, 35]}>
