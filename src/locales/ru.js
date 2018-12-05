@@ -905,17 +905,9 @@ export default {
     transactionRangeError: `Please introduce an amount between ${MIN_TRANSACTION_AMOUNT} and ${MAX_TRANSACTION_AMOUNT}`,
   },
   events: {
-    title: 'Skycoin events',
-    sidebarTitle1: 'JOIN THE TELEGRAM GROUP',
-    sidebarTitle2: 'AND SUBMIT AN EMAIL TO',
-    sidebarTitle3: 'WITH THE FOLLOWING INFORMATION:',
-    sidebarList: {
-      city: 'City, State, Country',
-      location: 'Location of meetup',
-      date: 'Date',
-      time: 'Time',
-      additional: 'Additional information',
-      contact: 'Contact information',
-    },
+    title: 'Skycoin in the community',
+    subtitle: 'Events and meetups',
+    sidebarTitle1: 'TO HOST A MEETUP, JOIN THE TELEGRAM GROUP',
+    sidebarTitle2: 'OR SUBMIT AN EMAIL TO',
   },
 };
