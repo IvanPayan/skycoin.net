@@ -6,7 +6,6 @@ import { FONT_FAMILIES, COLOR, FONT_SIZES } from 'config';
 import { Flex } from 'grid-styled';
 import { rem } from 'polished';
 import Link from 'components/Link';
-import { Flex } from 'grid-styled';
 
 import Heading from 'components/Heading';
 
